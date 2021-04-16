@@ -1,0 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#corona-img{
+    /* border: 1px solid red; */
+    max-width: 400px;
+    margin: 0 auto;
+}
+.site-head {
+    font-weight: 800;
+}
+#deathCountLine{
+    font-size: 2.3rem;
+}
