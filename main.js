@@ -27,7 +27,7 @@ $(document).ready(async function () {
     $("#deathBtn").click(async function (e) { 
         e.preventDefault();
 
-        let countryName = prompt("Enter The country code: ")
+        let countryName = prompt("Enter The country code/Short-form: ")
         // return countryName ;
         
 
