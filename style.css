@@ -4,8 +4,9 @@ html{
 
 #corona-img{
     /* border: 1px solid red; */
-    max-width: 400px;
+    max-width: 80vw;
     margin: 0 auto;
+
 }
 .site-head {
     font-weight: 800;
