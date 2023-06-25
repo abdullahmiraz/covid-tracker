@@ -1,104 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>COVID-19 Tracker</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <title>COVID-19 Tracker</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- custom css  -->
-    <link rel="stylesheet" href="./style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  </head>
-  <body>
+  <!-- custom css  -->
+  <link rel="stylesheet" href="./style.css">
 
-    <div class="container text-center my-4 img-fluid border-bottom">
-        <!-- <img class="img-fluid" src="https://www.narayanahealth.org/blog/wp-content/uploads/2020/05/shutterstock_1612792156.jpg" alt=""> -->
-        <img id="corona-img" class="img-fluid" src="https://i.pinimg.com/originals/f6/af/7b/f6af7bcdc152e52d0bcc177ef2acbd8d.gif" alt="">
-        <h1 class="display-4 site-head">Covid-19 Tracker</h1>
-    </div>
+</head>
 
+<body class="w-50 mx-auto">
 
-    <div class="container container-fluid">
-        <label for="country">Country List </label><span style="color: red !important; display: inline; float: none;"> ***</span> 
-
-            
-        <select id="countryList" name="country" class="form-control">
-            <option selected disabled hidden value="Afghanistan">Country : Short code to enter</option>
-            <!-- <option value="Åland Islands">Åland Islands</option> -->
-        </select>
-        <p style="color: green; font-weight: 700; border-bottom: 2px solid green; max-width: 700px; margin: 0 auto;" class="text-center my-4">Select Country and Enter the short code after clicking this button</p>
-    
-    </div>
+  <div class="container text-center my-4 img-fluid border-bottom">
+    <img id="corona-img" class="img-fluid" style="max-width: 320px " src="./images/bacteria.gif" alt="">
+    <h1 class="display-4 site-head">Covid-19 Tracker</h1>
+  </div>
 
 
-
-    <div class="container" id="deathContainer">
-        <!-- <div class="card">
-
-            <div class="card text-left">
-                <img class="card-img-top" src="holder.js/100px180/" alt="">
-                <div class="card-body">
-                  <h4 class="card-title">Title</h4>
-                  <p class="card-text">Body</p>
-                </div>
-            </div>
-
-            <div class="card text-left">
-                <img class="card-img-top" src="holder.js/100px180/" alt="">
-                <div class="card-body">
-                  <h4 class="card-title">Title</h4>
-                  <p class="card-text">Body</p>
-                </div>
-            </div>
-
-            <div class="card text-left">
-                <img class="card-img-top" src="holder.js/100px180/" alt="">
-                <div class="card-body">
-                  <h4 class="card-title">Title</h4>
-                  <p class="card-text">Body</p>
-                </div>
-            </div>
-
-            <div class="card text-left">
-                <img class="card-img-top" src="holder.js/100px180/" alt="">
-                <div class="card-body">
-                  <h4 class="card-title">Title</h4>
-                  <p class="card-text">Body</p>
-                </div>
-            </div>
-
-        </div> -->
-    </div>
+  <div class="container container-fluid">
+    <label for="country">Country List </label><span
+      style="color: red !important; display: inline; float: none;">*</span>
 
 
+    <select id="countryList" name="country" class="form-control">
+      <option selected disabled hidden value="Afghanistan">Country : Short code to enter</option>
+      <!-- <option value="Åland Islands">Åland Islands</option> -->
+    </select>
+    <p style="color: green; font-weight: 700; border-bottom: 2px solid green; max-width: 700px; margin: 0 auto;"
+      class="text-center my-4">Select Country and Enter the short code after clicking this button</p>
 
- <!-- death button  -->
+  </div>
 
-    <div class="container text-center my-4">
-        <button id="deathBtn" type="button" class="btn btn-primary">
-            Enter code
-        </button>
-    </div>
-    
-    <div class="container my-5 text-center">Developed by
-      <a href="mailto:abdullahmiraz2015@gmail.com" class="badge bg-warning text-dark">Abdullah Miraz</a>
-    </div>
+
+  <!-- death button  -->
+
+  <div class="container text-center my-4">
+    <button id="deathBtn" type="button" class="btn btn-primary">
+      Enter code
+    </button>
+  </div>
+
+  <div class="container my-5 text-center">Developed by
+    <a href="mailto:abdullahmiraz2015@gmail.com" class="badge bg-warning text-dark">Abdullah Miraz</a>
+  </div>
 
 
 
 
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-    <script src="./main.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="./main.js"></script>
 
 </body>
+
 </html>
